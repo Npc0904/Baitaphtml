@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.tieude {
+    margin-left: 200px;
+    margin: -135px 10px 15px 250px;
+    display: block;
+
+}
+
+ul {
+    width: 200px;
+    height: 100%;
+    background-color: gray;
+    margin: 10px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+.trangchu {
+    background-color: green;
+    color: white !important;
+}
+
+/*1 cach keu dai thanh menu nhu hinh
+  2 cach xai child
+  3 tai sao ko important dc
+ */

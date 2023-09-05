@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    display: block;
+}
+
+.hovaten {
+    display: block;
+    margin: 10px 20px;
+}
+.textten{
+    margin-top: 10px;
+    display: block;
+    width: 1000px;
+    height: 25px;
+}
+.email{
+    display: block;
+    margin: 10px 20px;
+}
+.textmail{
+    margin-top: 10px;
+    display: block;
+    width: 1000px;
+    height: 100px;
+}
+.tinnhan{
+    display: block;
+    margin: 10px 20px;
+}
+.texttin{
+    margin-top: 10px;
+    display: block;
+    width: 1000px;
+    height: 200px;
+}
+.guitin{
+    background-color: green;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px 15px;
+}
+.guitingiua{
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    color: aliceblue;
+    background-color: green;
+    border: none;
+    font-size: large;
+}
+
+

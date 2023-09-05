@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* buoc dau phai reset css */
+    *{
+        margin 0
+        padding: 0;
+    }
+    div p{
+        color: red;
+    }
+    .hello {
+        color:aquamarine
+
+    }
+    .login:hover{
+        display: block;
+        cursor: pointer;
+        color: red;
+        width: 80px;
+        /* phai doi the ngay ko la ko chinh duoc width height */
+    }
+    .btn:active{
+       color: red;
+    }
+    /* active voi hover thi active nhan vao thi no moi hien css con hover cho vo la an*/
+    .display{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        display: none;
+    }
+    .visibility{
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        /* visibility: hidden; */
+        opacity: 0;
+    }
+    /* cach phan biet 
+       1. display: none (mat khoi trinh duyet)
+       2. opacity: 0 (do mo chay tu 0 den 1)
+       3. visibility: hidden (van o do nhung ko tuong tac dc thi du nhu con chuot curson:pointer)
+       */
+</style>
+<body>
+    <div class="div" >
+        <p>the 1</p>
+        <p>the 2</p>
+    </div>
+   <p>the 3</p>
+   <button class="login">login</button>
+   <button class="btn">register</button>
+   <div class="display">
+    box
+   </div>
+   <div class="visibility">
+    visibility
+   </div>
+   
+</body>
+
+</html>
