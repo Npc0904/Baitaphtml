@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt("hay nhap chuoi ban can check")
+        let arr = a.split(" ");
+        console.log(arr.reverse());
+        let result = true;
+        for (let i = 0; i < arr.length / 2; i++) {
+            if (arr[i!=arr.length/2] !== arr[arr.length - 1 - i]) {
+               console.log("day la chuoi doi xung");
+            }else {console.log("day ko phai la chuoi doi xung");}
+        }
+    </script>
+</body>
+
+</html>

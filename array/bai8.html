@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+     let arr = [1, 10, 50, 100, 200, 300];
+        let maxValue = 0;
+        let maxIndex = 0;
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++)
+            if (arr[i] > maxValue) {
+                maxValue = arr[i];
+                sum += arr[i];
+            }      
+    console.log('phan tu lon nhat la', maxValue);
+    console.log('gia tri trung binh cua mang la', sum/arr.length);
+  </script>
+</body>
+
+</html>
