@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let string = ('236574987')
+        let arr = string.split('');
+        let fixArr = arr.map((number) => {
+            return Number(number)
+        })
+        let test = (a) => {
+            for (let i = 2; i < a; i++) {
+                if (a % i !== 0) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        let primeNumber = fixArr.filter(test);
+        let result = primeNumber.reduce((accumulator, item) => {
+            return accumulator + item;
+        })
+        console.log(`tong so nguyen to co trong chuoi la ${result}`)
+    </script>
+</body>
+
+</html>
