@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findMaxString(input) {
+            let newString = " ";
+            let maxString = " ";
+            for (let i = 0; i < input.length; i++) {
+               if (newString.includes(input[i])) {
+                 newString=newString.slice(newString.indexOf(input[i])+1);
+               }
+               newString += input[i];
+               if (maxString.length > newString.length) {
+                  maxString  = newString;
+                
+               }
+                return maxString;
+            }
+        }
+        let string = prompt(" Moi ban nhap chuoi can kiem tra ");
+        let result = findMaxString(string);
+        console.log(` Chuoi can tim la ${result} `);
+        // bai nay em co di tham khao mot so noi nha thay , tai y tuong cua em no dai voi em cam giac no khong dung a
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // cho chuoi 5 so nguyen, tim gia tri lon nhat ma ko bi trung nhau
+        let arr = [5, 5, 4, 3, 1] 
+
+        // let newArray = Array.from(new Set(arr));
+        let newArray = [... new Set(arr)];
+        console.log(newArray);
+        let result = [];
+        for (let i = 0; i < newArray.length; i++) {
+            let count = 0;
+            for (let j = 0; j < arr.length; j++) {
+                if (newArray[i] == arr[j] ) {
+                    count ++;
+                }
+            }}
+    </script>
+</body>
+</html>

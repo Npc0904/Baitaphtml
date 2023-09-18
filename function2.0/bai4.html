@@ -10,14 +10,17 @@
 <body>
     <script>
         let arr = ["a", "b", "c", 1, 2, 3, 4, 5];
-        function deleteElement(name) {
-            let newArr = arr.filter(function (item) {
-                return isNaN(item)
-            })
-            return newArr
-        }
-        let result = deleteElement(arr)
-        console.log(result.join(''));
+        // function deleteElement(name) {
+        //     let newArr = arr.filter(function (item) {
+        //         return Number.isNaN(item)
+        //     })
+        //     return newArr
+        // }
+        // let result = deleteElement(arr)
+        // console.log(result.join(''));
+        console.log(isNaN(NaN)); // true
+        console.log(Number.isNaN("tu")); //false
+        console.log(isNaN("37")); //false
     </script>
 </body>
 
