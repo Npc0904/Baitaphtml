@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: azure;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .form {
+        margin: 10px;
+        background-color: bisque;
+        padding: 10px 0px 10px 10px;
+        background-color: beige;
+        width: 500px;
+        margin: 0px auto;
+    }
+
+    .form--name input {
+        background-color: azure;
+        width: 100%;
+        border-style: hidden;
+    }
+
+    .form--email input {
+        background-color: azure;
+        width: 100%;
+        border-style: hidden;
+    }
+
+    .form--password input {
+        background-color: azure;
+        width: 100%;
+        border-style: hidden;
+    }
+
+    .form--confirmpassword input {
+        background-color: azure;
+        width: 100%;
+        border-style: hidden;
+    }
+
+    .form--name {
+        margin: 5px 0px;
+    }
+
+    .form--email {
+        margin: 5px 0px;
+    }
+
+    .form--password {
+        margin: 5px 0px;
+    }
+
+    .form--confirmpassword {
+        margin: 5px 0px;
+    }
+
+    .form--submit input {
+        background-color: rgb(141, 141, 241);
+        width: 80px;
+        height: 30px;
+        margin: 10px 0px;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Đăng ký tài khoản</h1>
+    </header>
+    <div class="form">
+        <form action="resigter" method="post">
+            <div class="form--name">
+                <label for="name">Họ và tên:</label><br>
+                <input type="text" id="name">
+            </div>
+            <div class="form--email">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email">
+            </div>
+            <div class="form--password">
+                <label for="passwords">Mật Khẩu:</label><br>
+                <input type="password" id="passwords">
+            </div>
+            <div class="form--confirmpassword">
+                <label for="confirmpassword">Xác nhận mật khẩu:</label><br>
+                <input type="password" id="confirmpassword">
+            </div>
+            <div class="form--submit">
+                <input type="submit" value="Đăng ký">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

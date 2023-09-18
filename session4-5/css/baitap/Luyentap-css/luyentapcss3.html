@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyentapcss3</title>
+</head>
+<body>
+    <style>
+        form{margin: 20px;max-width: 600px;display: flex; flex-direction: column;}
+        label{margin-bottom: 10px; font-weight: bold;}
+        input[type="text"],
+        input[type="email"],
+        textarea{padding:10px;margin-bottom: 20px;border: 1px solid #ccc;
+        border-radius: 4px; font-size:16px}
+        input[type="submit"]
+        {background-color: #4CAF50;color:#fff;boder:none;boder-radius:4px;padding:10px 20px;font-size: 16px; cursor: pointer;}
+        </style>
+    <H1>Liên hệ với chúng tôi</H1>
+    <form>
+        <label for="Name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="Email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <label for="messenger">Tin nhắn:</label>
+        <textarea name="messenger" id="messenger" rows="4" required></textarea>
+        <input type="submit" value="Gửi">
+    </form>
+</body>
+</html>

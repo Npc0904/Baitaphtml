@@ -1,0 +1,39 @@
+body {
+    padding: 10px 300px;
+}
+
+.phuluc {
+    padding-left: 300px;
+}
+
+.anh {
+    float: left;
+}
+
+.chuthich {
+    padding: 0px 100px;
+    text-align: center;
+}
+
+.menu {
+    padding: 50px 0px;
+}
+
+.menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(154, 152, 255);
+    color: black;
+}
+
+.menu a:hover {
+    background-color: red;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}

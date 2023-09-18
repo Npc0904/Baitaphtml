@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 10px 400px;
+        background-color: gray;
+        ;
+    }
+
+    header {
+        padding: 10px 0px;
+    }
+
+    section {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 20px;
+        gap: 20px;
+        max-height: 700px;
+        width: 300px
+    }
+
+    figure {
+        background-color: white;
+        width: 210px;
+        padding: 5px;
+    }
+
+    footer {
+        background-color: black;
+        text-align: center;
+    }
+
+    footer p {
+        color: white;
+    }
+
+    figure input {
+        background-color: darkcyan;
+        padding: 10px;
+        color: white;
+        margin-top: 5px;
+    }
+
+    .main2 {
+        order: 4;
+    }
+
+    .main3 {
+        order: 2;
+    }
+
+    .main4 {
+        order: 5;
+    }
+
+    .main5 {
+        order: 3;
+    }
+
+    .main6 {
+        order: 6;
+    }
+
+    footer {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: purple;
+    }
+
+    hr {
+        background-color: darkslategray;
+        height: 1px;
+        border: 0;
+    }
+</style>
+
+<body>
+    <header><a href="#">Home</a></header>
+    <hr>
+    <section>
+        <figure class="main1">
+            <img src="https://picsum.photos/200/100" alt="anh1">
+            <figcaption>
+                <h6>Sản phẩm 1</h6>
+                <p>Giá:$10</p>
+            </figcaption>
+            <input type="submit" value="Thêm vào giỏ hàng">
+        </figure>
+        <figure class="main2">
+            <img src="https://picsum.photos/200/100" alt="anh2">
+            <figcaption>
+                <h6>Sản phẩm 2</h6>
+                <p>Giá:$15</p>
+            </figcaption>
+            <input type="submit" value="Thêm vào giỏ hàng">
+        </figure>
+        <figure class="main3">
+            <img src="https://picsum.photos/200/100" alt="anh3">
+            <figcaption>
+                <h6>Sản phẩm 3</h6>
+                <p>Giá:$20</p>
+            </figcaption>
+            <input type="submit" value="Thêm vào giỏ hàng">
+        </figure>
+        <figure class="main4">
+            <img src="https://picsum.photos/200/100" alt="anh4">
+            <figcaption>
+                <h6>Sản phẩm 4</h6>
+                <p>Giá:$25</p>
+            </figcaption>
+            <input type="submit" value="Thêm vào giỏ hàng">
+        </figure>
+        <figure class="main5">
+            <img src="https://picsum.photos/200/100" alt="anh5">
+            <figcaption>
+                <h6>Sản phẩm 5</h6>
+                <p>Giá:$30</p>
+            </figcaption>
+            <input type="submit" value="Thêm vào giỏ hàng">
+        </figure>
+        <figure class="main6">
+            <img src="https://picsum.photos/200/100" alt="anh6">
+            <figcaption>
+                <h6>Sản phẩm 6</h6>
+                <p>Giá:$35</p>
+            </figcaption>
+            <input type="submit" value="Thêm vào giỏ hàng">
+        </figure>
+    </section>
+    <footer>
+        <p>Trang web bán hàng của chúng tôi</p>
+        <p>Email:info@website.com</p>
+    </footer>
+</body>
+
+</html>
