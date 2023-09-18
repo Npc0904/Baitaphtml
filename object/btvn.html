@@ -15,13 +15,14 @@
                  newString=newString.slice(newString.indexOf(input[i])+1);
                }
                newString += input[i];
-               if (newString.length > maxString.length) {
+               if (String.length > maxString.length) {
                   maxString  = newString;
                 
                }
                 return maxString;
             }
         }
+        let string = prompt ( " hay nhap chuoi ban can kiem tra");
         let result = findMaxString(string);
         console.log(` Chuoi can tim la ${result} `);
         // bai nay em co di tham khao mot so noi nha thay , tai y tuong cua em no dai voi em cam giac no khong dung a
