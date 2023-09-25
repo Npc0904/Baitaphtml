@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <link rel="stylesheet" href="./baitap4.css">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <!-- Tạo giao diện giống đề bài 
+            các bước làm:
+            1. tạo 1 mảng chứa 10 ảnh
+            2. tạo giao diện HTML như trên hình mẫu
+            3. dùng js đổi theme (k dùn HTML)
+    
+        -->
+        <div class="container">
+            <div class="container__main">
+                <img class="container__main--show" src="./img1/anh1.jpg" alt="">
+            </div>
+            <div class="container__images">
+                <ul class="container__images--list">
+                    <!-- <li class="btn">&#10094;</li> -->
+                    <!-- <li><img src="./img1/anh1.jpg" alt=""></li>
+                    <li><img src="./img1/anh2.jpg" alt=""></li>
+                    <li><img src="./img1/anh3.jpg" alt=""></li>
+                    <li><img src="./img1/anh4.jpeg" alt=""></li>
+                    <li><img src="./img1/anh5.jpeg" alt=""></li>
+                    <li><img src="./img1/anh6.jpeg" alt=""></li>
+                    <li><img src="./img1/anh7.jpeg" alt=""></li>
+                    <li><img src="./img1/anh8.jpeg" alt=""></li>
+                    <li><img src="./img1/anh9.jpeg" alt=""></li>
+                    <li><img src="./img1/anh10.jpeg" alt=""></li> -->
+                    <!-- <li class="btn-next"><span>&#10095;</span></li> -->
+    
+                </ul>
+            </div>
+        </div>
+        <script>
+            let count = -1;
+            let images = ['./img1/anh1.jpg', './img1/anh2.jpg', './img1/anh3.jpg', './img1/anh4.jpeg', './img1/anh5.jpeg',
+                './img1/anh6.jpeg', './img1/anh7.jpeg', './img1/anh8.jpeg', './img1/anh9.jpeg', './img1/anh10.jpeg'];
+            // function render list ảnh
+            function renderImages(input) {
+                let text = '';
+                for (let index = 0; index < 9; index++) {
+                    if (index == 4) {
+                        text += `<li class ="img" onclick = 'chooseImg(${index})'><img src="${input[index]}" alt=""></li>`
+                        document.getElementsByClassName("container__main--show")[0].src = input[index];
+                    } else {
+                        text += `<li class ="img" onclick = 'chooseImg(${index})' style = 'opacity: 0.5' ><img src="${input[index]}" alt=""></li>`
+                    }
+                }
+                document.getElementsByClassName('container__images--list')[0].innerHTML =
+                    `
+                   <li onclick = 'preImage()'class="btn">&#10094;</li>
+                        ${text}
+                    <li onclick = 'nextImage()' class="btn next"><span>&#10095;</span></li>
+                `
+                if (count != -1) {
+                    let result = document.getElementsByClassName('img');
+                    for (let j = 0; j < 9; j++) {
+                        if (j == count+1) {
+                            document.getElementsByClassName('img')[j].style.opacity = 1;
+                        } else {</body>
+</html>
