@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <main>
+        <h2>Feedback Coach</h2>
+        <div class="feedback">
+            <div class="form">
+                <div class="question">
+                    <p>Thầy dạy có hay không</p>
+                </div>
+                <div class="score">
+                    <label for="1">1</label>
+                    <input type="radio" name="score" id="1">
+                    <label for="2">2</label>
+                    <input type="radio" name="score" id="2">
+                    <label for="3">3</label>
+                    <input type="radio" name="score" id="3">
+                    <label for="4">4</label>
+                    <input type="radio" name="score" id="4">
+                    <label for="5">5</label>
+                    <input type="radio" name="score" id="5">
+                    <label for="6">6</label>
+                    <input type="radio" name="score" id="6">
+                    <label for="7">7</label>
+                    <input type="radio" name="score" id="7">
+                    <label for="8">8</label>
+                    <input type="radio" name="score" id="8">
+                    <label for="9">9</label>
+                    <input type="radio" name="score" id="9">
+                    <label for="10">10</label>
+                    <input type="radio" name="score" id="10">
+                </div>
+                <div class="review">
+                    <input class="comment" type="text" placeholder="Write a review">
+                    <input class="send" type="submit" value="send">
+                </div>
+            </div>
+            <div class="feedback__content">
+                <ul>
+                    <!--  -->
+                    <li>
+                        <div class="list__score"> <span>1</span></div>
+                        <div class="list__comment">
+                            <p> Numquam, dolores?</p>
+                        </div>
+                        <div class="list__edit">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <textarea class="edit" name="edit" rows="10" cols="40">
+
+                            </textarea>
+                            
+                        </div>
+                        <div class="list__delete"><i class="fa-solid fa-x"></i></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
