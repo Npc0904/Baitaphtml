@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#emo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container {
+    margin: 100px;
+    height: 100px;
+    width: 200px;
+    display: none;
+}
